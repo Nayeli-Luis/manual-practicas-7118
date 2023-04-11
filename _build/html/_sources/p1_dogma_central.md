@@ -3,7 +3,7 @@
 
 ## Características generales
 
-1. <font color="red">Ésta práctica es para computólogos/as. Si eres biólgo/a envíame un correo.</font>
+1. <font color="red">Ésta práctica es para **computólogos/as**. Si eres biólgo/a tu asignación llegará por correo.</font>
 
 2. Práctica que se entrega en **parejas**. 
 
