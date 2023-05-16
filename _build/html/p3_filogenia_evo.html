@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Métodos de biología molecular y estudios con DNA &#8212; Genómica computacional. Manual de bioinformática.</title>
+    <title>Filogenia y evolución &#8212; Genómica computacional. Manual de bioinformática.</title>
   
   
   
@@ -59,11 +59,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'p2_metodos';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'p3_filogenia_evo';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Filogenia y evolución" href="p3_filogenia_evo.html" />
-    <link rel="prev" title="El dogma central de la biología molecular" href="p1_dogma_central.html" />
+    <link rel="next" title="Glosario" href="Glosario.html" />
+    <link rel="prev" title="Métodos de biología molecular y estudios con DNA" href="p2_metodos.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -159,12 +159,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="p1_dogma_central.html">El dogma central de la biología molecular</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Práctica 2.</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Métodos de biología molecular y estudios con DNA</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="p2_metodos.html">Métodos de biología molecular y estudios con DNA</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Práctica 3.</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="p3_filogenia_evo.html">Filogenia y evolución</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Filogenia y evolución</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Glosario</span></p>
 <ul class="nav bd-sidenav">
@@ -240,7 +240,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/solnavss/Genomica_Computacional/issues/new?title=Issue%20on%20page%20%2Fp2_metodos.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/solnavss/Genomica_Computacional/issues/new?title=Issue%20on%20page%20%2Fp3_filogenia_evo.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Abrir un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -270,7 +270,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/p2_metodos.md" target="_blank"
+      <li><a href="_sources/p3_filogenia_evo.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Descargar archivo fuente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -352,7 +352,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Métodos de biología molecular y estudios con DNA</h1>
+    <h1>Filogenia y evolución</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -363,8 +363,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-generales">Características generales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-i-instrucciones">Parte I. Instrucciones</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-ii-instrucciones">Parte II. Instrucciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descubriendo-un-nuevo-virus">Descubriendo un nuevo virus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alineando-secuencias">Alineando secuencias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#infiriendo-el-origen">Infiriendo el origen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sacando-conclusiones">Sacando conclusiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referencias</a></li>
 </ul>
             </nav>
         </div>
@@ -376,69 +379,93 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="section" id="metodos-de-biologia-molecular-y-estudios-con-dna">
-<h1>Métodos de biología molecular y estudios con DNA<a class="headerlink" href="#metodos-de-biologia-molecular-y-estudios-con-dna" title="Permalink to this headline">#</a></h1>
-<p><strong>Nayeli Luis y Jazmín Santillán</strong></p>
+  <div class="section" id="filogenia-y-evolucion">
+<h1>Filogenia y evolución<a class="headerlink" href="#filogenia-y-evolucion" title="Permalink to this headline">#</a></h1>
 <div class="section" id="caracteristicas-generales">
 <h2>Características generales<a class="headerlink" href="#caracteristicas-generales" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p><font color="red">Ésta práctica es para <strong>todos/as/es</strong>.</font></p></li>
+<li><p><font color="red">Esta práctica es para <strong>todos/as/es</strong>.</font></p></li>
 <li><p>Práctica que se entrega con su equipo de proyecto.</p></li>
 <li><p>Entregables:</p></li>
 </ol>
 <ul class="simple">
-<li><p>Un archivo PDF con lo que se solicita.</p></li>
+<li><p>Un archivo PDF con lo que se solicita durante el desarrollo de la práctica.</p></li>
+<li><p>Aunque la pregunta no solicite que pongan una cita, si se revisó algún artículo, libro, etc. para contestar alguna pregunta, DEBE ser citado apropiadamente. Recuerden que cuando consultamos algo, no lo traducimos literalmente, el ejercicio es comprenderlo y después poder explicarlo con nuestras palabras en un lenguaje apropiado.</p></li>
 <li><p>El archivo PDF debe contener los nombres de TODOS los integrantes del equipo.</p></li>
-<li><p>Aunque el cuestionario es en equipo, TODOS deben llevar a cabo la simulaciones de Labster.</p></li>
 <li><p>La entrega por Classroom es INDIVIDUAL.</p></li>
 </ul>
 </div>
-<div class="section" id="parte-i-instrucciones">
-<h2>Parte I. Instrucciones<a class="headerlink" href="#parte-i-instrucciones" title="Permalink to this headline">#</a></h2>
+<div class="section" id="descubriendo-un-nuevo-virus">
+<h2>Descubriendo un nuevo virus<a class="headerlink" href="#descubriendo-un-nuevo-virus" title="Permalink to this headline">#</a></h2>
+<p>En 2019 surgió un nuevo virus que conmocionó a la humanidad. Sin embargo, gracias a las tecnologías de secuenciación se logró obtener el genoma completo de este nuevo virus rápidamente.</p>
+<p>En aquel momento, era urgente saber todo lo que se pudiera del nuevo virus, incluyendo su origen. Si se conocía esta información, entonces iba a ser posible dar recomendaciones sobre tratamientos, valorar la agresividad del virus, la tasa de infección e incluso una posible vacuna.</p>
+<p>Al tener una nueva secuencia, lo primero que viene a la mente es compararla con lo que ya existe en las bases de datos.</p>
 <ol class="arabic simple">
-<li><p>Ingresa a <a class="reference external" href="https://my.labster.com/">Labster</a> completa las simulaciones<strong>Reacción en cadena de la polimerasa</strong> y <strong>Secuenciación de nueva generación</strong>. Contesta el siguiente cuestionario.</p></li>
+<li><p>Descarga el genoma completo del nuevo virus el cual se encuentra <a class="reference external" href="https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=fasta">aquí</a>.</p></li>
 </ol>
-<p><strong>Reacción en cadena de la polimerasa</strong></p>
-<ol class="arabic simple">
-<li><p>¿Existe alguna relación entre el proceso de replicación y la PCR? ¿Cuál?</p></li>
-<li><p>¿Qué se debe hacer antes de hacer una PCR?</p></li>
-<li><p>¿Para qué se hace una PCR?</p></li>
-<li><p>¿Cúál dirías que es el reactivo más importante de una PCR? Justifica tu respuesta.</p></li>
-<li><p>¿Para que sirve hacer una electroforesis después de la PCR?</p></li>
-<li><p>¿Qué es una firma única de genoma o huella genómica?</p></li>
-<li><p>¿Quién fue el asesino en ésta simulación?</p></li>
-<li><p>Agrega una captura de pantalla de la puntuación que cada integrante obtuvo durante la simulación.</p></li>
-</ol>
-<p><strong>Secuenciación de nueva generación</strong></p>
-<ol class="arabic simple">
-<li><p>En tus palabras, ¿Qué es secuenciar?</p></li>
-<li><p>¿Dirías que la reacción en cadena de la polimerasa y el método de secuenciación están relacionados? Justifica tu respuesta.</p></li>
-<li><p>¿En qué consistió la investigación de ésta simulación? ¿Qué resultados se obtuvieron?</p></li>
-<li><p>En tus palabras, ¿Qué es un <em>polimorfismo de nucleótido único</em>?</p></li>
-<li><p>Investiga, ¿Qué es una plataforma de secuenciación?</p></li>
-<li><p>Revisa con cuidado la Tabla 1 <a class="reference external" href="https://seimc.org/contenidos/documentoscientificos/procedimientosmicrobiologia/seimc-procedimiento71.pdf">del siguiente artículo</a> y responde ¿Cuántas plataformas se reportan y cuáles son?</p></li>
-<li><p>Agrega una captura de pantalla de la puntuación que cada integrante obtuvo durante la simulación.</p></li>
-</ol>
+<p>a) ¿Cuál es el tamaño del genoma de este virus? ¿Cómo lograste saberlo?
+b) ¿La secuencia fue publicada en algún artículo? Si es así, coloca la referencia en el formato que prefieras.
+c) Si la secuencia tienen un artículo científico publicado, lee el resumen del artículo y explica con tus palabras en qué consistió la investigación.</p>
 </div>
-<div class="section" id="parte-ii-instrucciones">
-<h2>Parte II. Instrucciones<a class="headerlink" href="#parte-ii-instrucciones" title="Permalink to this headline">#</a></h2>
-<ol class="arabic simple">
-<li><p>Elige dos artículos de cada color de la siguiente <a class="reference external" href="https://docs.google.com/spreadsheets/d/1y6yJ9gKC70aSWsxvxTCDHl0-zTTwOJgP/edit?usp=sharing&amp;ouid=117981748854039384449&amp;rtpof=true&amp;sd=true">lista</a>, en total serán 6 artículos.</p></li>
-<li><p>Por cada artículo seleccionado crea una <a class="reference external" href="https://docs.google.com/spreadsheets/d/1sVHVqroQYSNat6CuqrsnhzpsABjypmpEzu80JC6bT4E/edit?usp=sharing">tabla como la siguiente</a> y llénala con la información que se solicita:</p>
-<ul class="simple">
-<li><p>Título del artículo: El título en inglés o en español del artículo que seleccionaste.</p></li>
-<li><p>Link del artículo: El link del artículo original (el que está en la tabla de artículos).</p></li>
-<li><p>Tipo de estudio: Puede ser de genómica, metabarcoding o metagenómica. <font color="gray"><em>Ésta información puedes encontrarla en las sección de introducción o métodos</em>.</font></p></li>
-<li><p>Justificación del tipo de estudio: Es una justificación <strong>tuya</strong>, responde a la pregunta ¿Qué evidencia te arroja el artículo para que consideres que es un estudio de $x$ tipo?.</p></li>
-<li><p>Tipo de muestra: Si fueron heces de humano, suelo, etc. <font color="gray"><em>Ésta información puedes encontrarla en la sección de métodos</em>..</font></p></li>
-<li><p>Objetivo del estudio: Parafraseado, ¿Cuál fue el objetivo de éste estudio? <font color="gray"><em>Ésta información puedes encontrarla en las sección de introducción</em>.</font></p></li>
-<li><p>Plataforma de secuenciación: Escribe el nombre de la plataforma de secuenciación que utilizaron.  <font color="gray"><em>Ésta información puedes encontrarla en la sección de métodos</em>..</font></p></li>
-<li><p>Acceso a datos en NCBI: Clave en donde se encuentran los datos disponibles (esto lo veremos en la clase del 17 de abril).</p></li>
-</ul>
-</li>
+<div class="section" id="alineando-secuencias">
+<h2>Alineando secuencias<a class="headerlink" href="#alineando-secuencias" title="Permalink to this headline">#</a></h2>
+<p>Cuando comparamos secuencias, lo primero que debemos hacer es alinear. El <em>National Center of Biotechnology Information</em> posee una herramienta llamada BLAST (<em>Basic Local Alignment Search Tool</em>).</p>
+<ol class="arabic simple" start="2">
+<li><p>Ingresa a <a class="reference external" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">la página web de BLAST</a> y da clic en “Nucleotide BLAST”. Te va a aparecer una serie de secciones que hay que llenar.</p></li>
 </ol>
-<p>Pueden hacer su tabla en una hoja de Google Sheets y poner el enlace en su reporte (cuidando que podamos tener acceso con nuestros correos) o poner tal cual la tabla, como ud prefieran.</p>
-<p><strong>Tip</strong>: No es necesario leer todo el artículo para poder obtener la información.</p>
+<p>En la sección  <font color="#33B2FF">”Enter Query Sequence”</font> sube el arhivo FASTA que descargaste en la sección anterior o copia y pega la secuencia en el recuadro.</p>
+<p>En la siguiente sección <font color="#33B2FF">”Choose Search Set”</font> en <font color="#33B2FF"><em>Database</em></font> selecciona <font color="#33B2FF"><em>Standard databases (nr etc):</em></font> . Luego, en la sección de <font color="#33B2FF"><em>Organism</em></font>  en el menú desplegable selecciona <font color="#33B2FF"><em>Nucleotide collection (nr/nt)</em></font>  y en la seguiente linea, da click en <font color="#33B2FF"><em>exclude</em></font>  e ingresa en el recuadro balnco  <font color="#33B2FF"><em>SARS-CoV-2 (taxid:2697049)</em></font> .</p>
+<p>Y por último, en la sección <font color="#33B2FF"><em>Program Selection</em></font> selecciona la opción <font color="#33B2FF"><em>Highly similar sequences (megablast)</em></font> y luego clic en el botón  <font color="#33B2FF"><em>BLAST</em></font> . De cualquier forma, a continuación una imagen por si tienes duda de como llenar esta sección.</p>
+<div class="figure align-default" id="blast-filled">
+<a class="reference internal image-reference" href="_images/blast.png"><img alt="_images/blast.png" src="_images/blast.png" style="height: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Parámetros de BLAST.</span><a class="headerlink" href="#blast-filled" title="Permalink to this image">#</a></p>
+</div>
+<p>Una vez que termina el “blasteo” (término acuñada por biólogos), el programa arroja una serie de registros. Estos registros son secuencias que han sido previamente descritas y se encuentran en el NCBI. Además, los registros arrojados son las secuencias que más se parecen a nuestra secuencia problema.</p>
+<p>a)  Según BLAST, ¿De dónde podría prevenir el virus? <font color="gray"><em>Checa la columna de description de los 100 registros que te arroja</em></font>.
+b) Investiga, ¿Qué significa “Per. ident” y “Query cover”?. No olvides colocar la referencia.</p>
+<p>Cuando “googleas” BLAST, el primer artículo que sale es de la bella Wikipedia y dice algo como:</p>
+<blockquote>
+<div><p>Es importante mencionar que BLAST usa un algoritmo heurístico por lo que no nos puede garantizar que ha encontrado la solución correcta.</p>
+</div></blockquote>
+<p>Y luego:</p>
+<blockquote>
+<div><p>BLAST usa el algoritmo Smith-Waterman para realizar sus alineamientos.</p>
+</div></blockquote>
+<p>c) Imagina que eres el computólogo a cargo de un equipo, y que un biólogo/médico/químico te pregunta: ¿Qué es un algoritmo heurístico y por qué eso implica que la solución  no sea correcta? ¿En qué consiste el algoritmo Smith-Waterman?</p>
+<p>Trata de explicarlo en los términos más simples que puedas (recuerda quien es tu público).</p>
+<ol class="arabic simple" start="3">
+<li><p>En un estudio de este tipo, probablemente no sea buena idea llevar a cabo una comparación por pares. Ya que podríamos llegar a una conclusión errónea, como que el SARS-COVID-2 fue creado en un laboratorio, ¿Te suena esa teoría?. Ahora, llevaremos a cabo un alineamiento múltiple (<em>Multiple Sequence Alignment</em> o abreviado MSA).</p></li>
+</ol>
+<p>En la parte superior de la última columna <font color="#33B2FF"><em>Accesion</em></font>, hay una opción que dice <font color="#33B2FF"><em>MSA Viewer</em></font>, da clic ahí.  Aquí aparece una representación de los alineamientos y cada línea roja vertical significa que hay una posición que es diferente a la secuencia problema. La siguiente imagen explica cada región de esta ventana.</p>
+<p>Revisa “a ojo” qué tan diferente es nuestra secuencia con la de cualquiera que diga <em>synthetic construct</em>. Ahora haz la comparación con alguna secuencia que diga <em>Bat coronavirus</em> y finalmente, con cualquiera que diga <em>Pangolin coronavirus</em>.</p>
+<p>a) Si tenemos 40 secuencias problema, ¿Qué es preferible, un alineamiento por pares o un alineamiento múltple? ¿Por qué?</p>
+<p>b) Indaga un poco más, ¿En qué consisten las secuencias que dicen “synthetic construct”? ¿Tendría sentido que el coronovarius haya sido creado en un laboratorio? ¿Qué opinas?</p>
+<p>Vuelve a la página anterior y selecciona únicamente aquellas secuencias que corresponden a murciélago (<em>Bat coronavirus</em> o <em>Bat SARS-like coronavirus</em>) y a pangolín (<em>Pangolín coronavirus</em>). Vuelve a dar clic en el botón <em>MSA viewer</em>.</p>
+<p>d) ¿Son muy diferentes las secuencias entre el pangolín y murciélago?</p>
+<p>e) En un alineamiento, ¿Por qué puede haber espacios en blanco?</p>
+</div>
+<div class="section" id="infiriendo-el-origen">
+<h2>Infiriendo el origen<a class="headerlink" href="#infiriendo-el-origen" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple" start="4">
+<li><p>Como te habrás dado cuenta, saber si algo es muy diferente o no “a ojo” es bastante complicado, para eso existen los árboles filogenéticos. Vuelve a la ventana anterior y a la izquierda de <font color="#33B2FF"><em>MSA viewer</em></font> hay una opción que dice <font color="#33B2FF"><em>Distance tree of results</em></font>, da clic en esta opción. Se ha creado un árbol filogenético a través del método de evolución mínima; sin embargo, es importante considerar que los árboles generados por BLAST se basan en comparaciones entre pares y no en un alineamiento múltiple.</p></li>
+</ol>
+<p>a) Adjunta una captura de pantalla del árbol que obtuviste.</p>
+<p>b) ¿Es importante primero alinear antes de construir un árbol filogenético? ¿Por qué?</p>
+<p>c) ¿Podemos confiar en el árbol que ha generado BLAST? ¿Por qué?</p>
+<p>d) ¿Por qué BLAST no genera árboles mediante alineamientos múltiples?</p>
+<p>e) En función de lo que observas en el árbol filogenético, ¿Qué podrías decir sobre el origen del SARS-CoV-2?</p>
+</div>
+<div class="section" id="sacando-conclusiones">
+<h2>Sacando conclusiones<a class="headerlink" href="#sacando-conclusiones" title="Permalink to this headline">#</a></h2>
+<p>Por último, en <strong>al menos</strong>  400 palabras contesta la siguiente pregunta:</p>
+<p>¿Es mejor crear un árbol tomando en cuenta todo el genoma o es suficiente con algunos genes?</p>
+<p><em>No hay una respuesta correcta o incorrecta, solo justifica tu respuesta. Explica todo lo que consideres que debe ser explicado, cita todo aquello que hayas consultado para responder a esta pregunta y, si lo deseas, toma un caso de estudio para poder ejemplificar.</em></p>
+</div>
+<div class="section" id="referencias">
+<h2>Referencias<a class="headerlink" href="#referencias" title="Permalink to this headline">#</a></h2>
+<p>Andersen, K.G., Rambaut, A., Lipkin, W.I. et al. The proximal origin of SARS-CoV-2. <em>Nat Med</em> 26, 450–452 (2020). https://doi.org/10.1038/s41591-020-0820-9</p>
+<p>Huang, Y., Yang, C., Xu, Xf. et al. Structural and functional properties of SARS-CoV-2 spike protein: potential antivirus drug development for COVID-19. <em>Acta Pharmacol Sin 41</em>, 1141–1149 (2020). https://doi.org/10.1038/s41401-020-0485-4</p>
+<p>McGinnis S, Madden TL. BLAST: at the core of a powerful and diverse set of sequence analysis tools. <em>Nucleic Acids Res</em>. 2004 Jul 1;32(Web Server issue):W20-5. doi: 10.1093/nar/gkh435. PMID: 15215342; PMCID: PMC441573.</p>
 </div>
 </div>
 
@@ -471,20 +498,20 @@ document.write(`
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="p1_dogma_central.html"
+       href="p2_metodos.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">El dogma central de la biología molecular</p>
+        <p class="prev-next-title">Métodos de biología molecular y estudios con DNA</p>
       </div>
     </a>
     <a class="right-next"
-       href="p3_filogenia_evo.html"
+       href="Glosario.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Filogenia y evolución</p>
+        <p class="prev-next-title">Glosario</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -504,8 +531,11 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-generales">Características generales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-i-instrucciones">Parte I. Instrucciones</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-ii-instrucciones">Parte II. Instrucciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descubriendo-un-nuevo-virus">Descubriendo un nuevo virus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alineando-secuencias">Alineando secuencias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#infiriendo-el-origen">Infiriendo el origen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sacando-conclusiones">Sacando conclusiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referencias</a></li>
 </ul>
   </nav></div>
 

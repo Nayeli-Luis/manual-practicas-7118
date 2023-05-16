@@ -10,6 +10,9 @@ parts:
   - caption: Práctica 2.
     chapters:
     - file: p2_metodos
+  - caption: Práctica 3.
+    chapters:
+    - file: p3_filogenia_evo
   - caption: Glosario
     chapters:
     - file: Glosario
