@@ -60,7 +60,7 @@ Y luego:
 
 > BLAST usa el algoritmo Smith-Waterman para realizar sus alineamientos. 
 
-c) Imagina que eres el computólogo a cargo de un equipo, y que un biólogo/médico/químico te pregunta: ¿Qué es un algoritmo heurístico y por qué eso implica que la solución  no sea correcta? ¿En qué consiste el algoritmo Smith-Waterman? 
+c) Imagina que eres el computólogo a cargo de un equipo, y que un biólogo/médico/químico te pregunta:¿Qué es un algoritmo heurístico y por qué eso implica que la solución  no es correcta?  ¿En qué consiste el algoritmo Smith-Waterman? 
 
 Trata de explicarlo en los términos más simples que puedas (recuerda quien es tu público).
 
